@@ -2,6 +2,7 @@ package apparel;
 
 import browsersetup.BaseTest;
 import com.google.common.base.Verify;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,10 +16,10 @@ public class ApparelTest extends BaseTest {
         openBrowser(baseurl);
     }
 
-    /*  @After
+      @After
       public void closebrowser(){
           driver.quit();
-      }*/
+      }
 
 //1. click on apparel and navigate to clothing
     @Test

@@ -25,14 +25,13 @@ public class TopMenuTest extends BaseTest {
         openBrowser(baseurl);
     }
 
-  /*  @After
+    @After
     public void closebrowser(){
         driver.quit();
-    }*/
+    }
 //    1.2 This method should click on the menu whatever name is passed as parameter.
     public void selectMenu(String menu) throws InterruptedException {
         Scanner scanner = new Scanner(System.in);
-        Actions actions = new Actions(driver);
 
         Thread.sleep(3000);
         switch (menu) {

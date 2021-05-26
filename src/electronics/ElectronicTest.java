@@ -1,6 +1,7 @@
 package electronics;
 
 import browsersetup.BaseTest;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,20 +18,18 @@ public class ElectronicTest extends BaseTest {
         openBrowser(baseurl);
     }
 
-    /*  @After
+      @After
       public void closebrowser(){
           driver.quit();
-      }*/
+      }
 //1.Test name verifyUserShouldNavigateToCellPhonesPageSuccessfully()
 @Test
     public void verifyUserShouldNavigateToCellPhonesPageSuccessfully(){
-    Actions actions = new Actions(driver);
 //1.1 Mouse Hover on “Electronics” Tab
 //1.2 Mouse Hover on “Cell phones” and click
 //1.3 Verify the text “Cell phones”
-    WebElement electorics = driver.findElement(By.xpath("//body[1]/div[6]/div[2]/ul[1]/li[2]/a[1]"));
-    WebElement cellphones = driver.findElement(By.xpath("//body[1]/div[6]/div[2]/ul[1]/li[2]/ul[1]/li[2]"));
-    actions.moveToElement(electorics).moveToElement(cellphones).click().build().perform();
+    mouseHoverToElement(By.xpath("//body[1]/div[6]/div[2]/ul[1]/li[2]/a[1]"));
+    mouseHoverToElement(By.xpath("//body[1]/div[6]/div[2]/ul[1]/li[2]/a[1]"));
 }
 
 //2.	Test name verifyThatTheProductAddedSuccessfullyAndPlaceOrderSuccessfully()

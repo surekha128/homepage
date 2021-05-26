@@ -24,10 +24,10 @@ public class TestSuits extends BaseTest {
         openBrowser(baseurl);
     }
 
-    /*  @After
+      @After
       public void closebrowser(){
           driver.quit();
-      }*/
+      }
 /*Write the following Test:
 1.Test name verifyProductArrangeInAlphaBaticalOrder()
 	1.1 Click on Computer Menu.
